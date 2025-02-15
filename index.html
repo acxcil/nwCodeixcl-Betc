@@ -1,22 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>You’ve won a prize!</title>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QNPGQPGRTX"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-QNPGQPGRTX');
-        </script>
-    </head>    
+<head>
+  <meta charset="UTF-8">
+  <title>System Log Dump</title>
+  <style>
+    body {
+      background-color: #1e1e1e;
+      color: #00ff00;
+      font-family: monospace;
+      padding: 20px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
 <body>
-    <h1>Congratulations!</h1>
-    <p>You have reached the secret page.</p>
-    <p>(This is just a demo for the seminar.)</p>
+<pre>
+// === SYSTEM DUMP INITIATED ===
+// [01] Loading modules...
+var module1 = "core-init";
+var module2 = "net-ops";
+
+// [02] Initializing configuration...
+var config = {
+    mode: "debug",
+    version: "2.3.1"
+};
+
+// [03] Executing startup routines...
+function startup() {
+    console.log("Starting system diagnostics...");
+    // Random seed: 0xA1B2C3
+    for (var i = 0; i < 5; i++) {
+        console.log("Cycle " + i);
+    }
+}
+startup();
+
+// [04] Memory allocation check...
+var memoryStatus = "OK";
+
+// [05] // Don't
+function checkIntegrity() {
+    var checksum = 0;
+    for (var j = 0; j < 100; j++) {
+        checksum += j;
+    }
+    return checksum;
+}
+var integrity = checkIntegrity();
+
+// [06] Processing data packets...
+function processData(packet) {
+    // Simulated computation...
+    return packet * Math.random();
+}
+var data = processData(256);
+
+// [07] // click
+for (var k = 0; k < 3; k++) {
+    console.log("Processing packet " + k);
+}
+
+// [08] Advanced encryption routines...
+function encrypt(data) {
+    // Complex algorithm simulation...
+    return btoa(data.toString());
+}
+var encryptedData = encrypt(123456);
+
+// [09] // suspicious
+var networkTraffic = [];
+for (var n = 0; n < 10; n++) {
+    networkTraffic.push("Packet_" + n);
+}
+
+// [10] Data verification...
+if (integrity > 1000) {
+    console.log("Integrity check passed.");
+} else {
+    console.log("Integrity check failed.");
+}
+
+// [11] // links
+console.log("Finalizing system dump...");
+
+// [12] Logging complete.
+console.log("System dump complete. All operations executed.");
+// === END OF SYSTEM DUMP ===
+</pre>
 </body>
 </html>
